@@ -1,0 +1,15 @@
+﻿.idea/
+Library/
+Logs/
+obj/
+Temp/
+ProjectSettings/
+UserSettings/
+StreamingAssets/
+StreamingAssets.meta
+Roles/
+Roles.meta
+Build/
+build/
+Bin/
+unity-AAMT*
