@@ -12,7 +12,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{d042d3dd-995c-bf89-b586-e23daef87890}</ProjectGuid>
+    <ProjectGuid>{abaa2410-9264-3f57-5ffa-4eb5c367fc51}</ProjectGuid>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -41,31 +41,43 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\AAMT\Plugins\Sirenix\Odin Validator\Editor\Scripts\Automation\OnPlayValidationHook.cs" />
-     <Compile Include="Assets\AAMT\Plugins\Sirenix\Odin Validator\Editor\Scripts\Editors\ValidationProfileManagerOverview.cs" />
-     <Compile Include="Assets\AAMT\Plugins\Sirenix\Odin Validator\Editor\Scripts\Editors\ValidationProfileTree.cs" />
-     <Compile Include="Assets\AAMT\Plugins\Sirenix\Odin Validator\Editor\Scripts\Profiles\ValidationCollectionProfileAsset.cs" />
-     <Compile Include="Assets\AAMT\Plugins\Sirenix\Odin Validator\Editor\Scripts\Editors\ValidationProfileEditor.cs" />
-     <Compile Include="Assets\AAMT\Plugins\Sirenix\Odin Validator\Editor\Scripts\Profiles\OdinValidationConfig.cs" />
-     <Compile Include="Assets\AAMT\Plugins\Sirenix\Odin Validator\Editor\Scripts\Misc\EnsureOdinValidatorDefine.cs" />
-     <Compile Include="Assets\AAMT\Plugins\Sirenix\Odin Validator\Editor\Scripts\Automation\AutomatedValidationHook.cs" />
-     <Compile Include="Assets\AAMT\Plugins\Sirenix\Odin Validator\Editor\Scripts\Profiles\AssetValidationProfile.cs" />
-     <Compile Include="Assets\AAMT\Plugins\Sirenix\Odin Validator\Editor\Scripts\Editors\ValidationRunner.cs" />
-     <Compile Include="Assets\AAMT\Plugins\Sirenix\Odin Validator\Editor\Scripts\Profiles\SceneValidationProfile.cs" />
-     <Compile Include="Assets\AAMT\Plugins\Sirenix\Odin Validator\Editor\Scripts\Automation\IValidationHook.cs" />
-     <Compile Include="Assets\AAMT\Plugins\Sirenix\Odin Validator\Editor\Scripts\Profiles\ValidationProfile.cs" />
-     <Compile Include="Assets\AAMT\Plugins\Sirenix\Odin Validator\Editor\Scripts\Editors\ValidationOverview.cs" />
-     <Compile Include="Assets\AAMT\Plugins\Sirenix\Odin Validator\Editor\Scripts\Automation\OnBuildValidationHook.cs" />
-     <Compile Include="Assets\AAMT\Plugins\Sirenix\Odin Validator\Editor\Scripts\Profiles\ValidationCollectionProfile.cs" />
-     <Compile Include="Assets\AAMT\Plugins\Sirenix\Odin Validator\Editor\Scripts\Profiles\AssetValidationProfileAsset.cs" />
-     <Compile Include="Assets\AAMT\Plugins\Sirenix\Odin Validator\Editor\Scripts\Automation\OnProjectStartupValidationHook.cs" />
-     <Compile Include="Assets\AAMT\Plugins\Sirenix\Odin Validator\Editor\Scripts\Editors\ValidationProfileManagerWindow.cs" />
-     <Compile Include="Assets\AAMT\Plugins\Sirenix\Odin Validator\Editor\Scripts\Editors\ValidationProfileEditorDrawer.cs" />
-     <Compile Include="Assets\AAMT\Plugins\Sirenix\Odin Validator\Editor\Scripts\Editors\ValidationProfileSOCreator.cs" />
-     <Compile Include="Assets\AAMT\Plugins\Sirenix\Odin Validator\Editor\Scripts\Profiles\SceneValidationProfileAsset.cs" />
-     <Compile Include="Assets\AAMT\Plugins\Sirenix\Odin Validator\Editor\Scripts\Profiles\ValidationProfileAsset.cs" />
-     <Compile Include="Assets\AAMT\Plugins\Sirenix\Odin Validator\Editor\Scripts\Automation\AutomatedValidation.cs" />
-     <None Include="Assets\AAMT\Plugins\Sirenix\Odin Validator\Editor\Scripts\Sirenix.OdinValidator.asmdef" />
+    <Analyzer Include="E:\AAMT-Sample\Packages\com.jimhy.aamt\Plugins\Sirenix\Assemblies\Sirenix.Utilities.dll" />
+    <Analyzer Include="E:\AAMT-Sample\Packages\com.jimhy.aamt\Plugins\Sirenix\Assemblies\Sirenix.Serialization.Config.dll" />
+    <Analyzer Include="E:\AAMT-Sample\Packages\com.jimhy.aamt\Plugins\Sirenix\Assemblies\NoEditor\Sirenix.Utilities.dll" />
+    <Analyzer Include="E:\AAMT-Sample\Packages\com.jimhy.aamt\Plugins\Sirenix\Assemblies\NoEditor\Sirenix.Serialization.dll" />
+    <Analyzer Include="E:\AAMT-Sample\Packages\com.jimhy.aamt\Plugins\Sirenix\Assemblies\Sirenix.Utilities.Editor.dll" />
+    <Analyzer Include="E:\AAMT-Sample\Packages\com.jimhy.aamt\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Editor.dll" />
+    <Analyzer Include="E:\AAMT-Sample\Packages\com.jimhy.aamt\Plugins\Sirenix\Assemblies\NoEmitAndNoEditor\Sirenix.Serialization.dll" />
+    <Analyzer Include="E:\AAMT-Sample\Packages\com.jimhy.aamt\Plugins\Sirenix\Assemblies\NoEmitAndNoEditor\Sirenix.Utilities.dll" />
+    <Analyzer Include="E:\AAMT-Sample\Packages\com.jimhy.aamt\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Attributes.dll" />
+    <Analyzer Include="E:\AAMT-Sample\Packages\com.jimhy.aamt\Plugins\Sirenix\Assemblies\Sirenix.Serialization.dll" />
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Packages\com.jimhy.aamt\Plugins\Sirenix\Odin Validator\Editor\Scripts\Automation\OnPlayValidationHook.cs" />
+     <Compile Include="Packages\com.jimhy.aamt\Plugins\Sirenix\Odin Validator\Editor\Scripts\Editors\ValidationProfileManagerOverview.cs" />
+     <Compile Include="Packages\com.jimhy.aamt\Plugins\Sirenix\Odin Validator\Editor\Scripts\Editors\ValidationProfileTree.cs" />
+     <Compile Include="Packages\com.jimhy.aamt\Plugins\Sirenix\Odin Validator\Editor\Scripts\Profiles\ValidationCollectionProfileAsset.cs" />
+     <Compile Include="Packages\com.jimhy.aamt\Plugins\Sirenix\Odin Validator\Editor\Scripts\Editors\ValidationProfileEditor.cs" />
+     <Compile Include="Packages\com.jimhy.aamt\Plugins\Sirenix\Odin Validator\Editor\Scripts\Profiles\OdinValidationConfig.cs" />
+     <Compile Include="Packages\com.jimhy.aamt\Plugins\Sirenix\Odin Validator\Editor\Scripts\Misc\EnsureOdinValidatorDefine.cs" />
+     <Compile Include="Packages\com.jimhy.aamt\Plugins\Sirenix\Odin Validator\Editor\Scripts\Automation\AutomatedValidationHook.cs" />
+     <Compile Include="Packages\com.jimhy.aamt\Plugins\Sirenix\Odin Validator\Editor\Scripts\Profiles\AssetValidationProfile.cs" />
+     <Compile Include="Packages\com.jimhy.aamt\Plugins\Sirenix\Odin Validator\Editor\Scripts\Editors\ValidationRunner.cs" />
+     <Compile Include="Packages\com.jimhy.aamt\Plugins\Sirenix\Odin Validator\Editor\Scripts\Profiles\SceneValidationProfile.cs" />
+     <Compile Include="Packages\com.jimhy.aamt\Plugins\Sirenix\Odin Validator\Editor\Scripts\Automation\IValidationHook.cs" />
+     <Compile Include="Packages\com.jimhy.aamt\Plugins\Sirenix\Odin Validator\Editor\Scripts\Profiles\ValidationProfile.cs" />
+     <Compile Include="Packages\com.jimhy.aamt\Plugins\Sirenix\Odin Validator\Editor\Scripts\Editors\ValidationOverview.cs" />
+     <Compile Include="Packages\com.jimhy.aamt\Plugins\Sirenix\Odin Validator\Editor\Scripts\Automation\OnBuildValidationHook.cs" />
+     <Compile Include="Packages\com.jimhy.aamt\Plugins\Sirenix\Odin Validator\Editor\Scripts\Profiles\ValidationCollectionProfile.cs" />
+     <Compile Include="Packages\com.jimhy.aamt\Plugins\Sirenix\Odin Validator\Editor\Scripts\Profiles\AssetValidationProfileAsset.cs" />
+     <Compile Include="Packages\com.jimhy.aamt\Plugins\Sirenix\Odin Validator\Editor\Scripts\Automation\OnProjectStartupValidationHook.cs" />
+     <Compile Include="Packages\com.jimhy.aamt\Plugins\Sirenix\Odin Validator\Editor\Scripts\Editors\ValidationProfileManagerWindow.cs" />
+     <Compile Include="Packages\com.jimhy.aamt\Plugins\Sirenix\Odin Validator\Editor\Scripts\Editors\ValidationProfileEditorDrawer.cs" />
+     <Compile Include="Packages\com.jimhy.aamt\Plugins\Sirenix\Odin Validator\Editor\Scripts\Editors\ValidationProfileSOCreator.cs" />
+     <Compile Include="Packages\com.jimhy.aamt\Plugins\Sirenix\Odin Validator\Editor\Scripts\Profiles\SceneValidationProfileAsset.cs" />
+     <Compile Include="Packages\com.jimhy.aamt\Plugins\Sirenix\Odin Validator\Editor\Scripts\Profiles\ValidationProfileAsset.cs" />
+     <Compile Include="Packages\com.jimhy.aamt\Plugins\Sirenix\Odin Validator\Editor\Scripts\Automation\AutomatedValidation.cs" />
+     <None Include="Packages\com.jimhy.aamt\Plugins\Sirenix\Odin Validator\Editor\Scripts\Sirenix.OdinValidator.asmdef" />
      <Reference Include="UnityEngine">
      <HintPath>D:\Program Files\Unity 2021.3.1f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
      </Reference>
@@ -321,59 +333,59 @@
      <Reference Include="UnityEditor.WindowsStandalone.Extensions">
      <HintPath>D:\Program Files\Unity 2021.3.1f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
      </Reference>
-     <Reference Include="Sirenix.OdinInspector.Attributes">
-     <HintPath>E:\unity-AAMT\Assets\AAMT\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Attributes.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.VisualScripting.IonicZip">
-     <HintPath>E:\unity-AAMT\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
      </Reference>
      <Reference Include="log4netPlastic">
-     <HintPath>E:\unity-AAMT\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
-     </Reference>
-     <Reference Include="Sirenix.Serialization.Config">
-     <HintPath>E:\unity-AAMT\Assets\AAMT\Plugins\Sirenix\Assemblies\Sirenix.Serialization.Config.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
      </Reference>
      <Reference Include="ReportGeneratorMerged">
-     <HintPath>E:\unity-AAMT\Library\PackageCache\com.unity.testtools.codecoverage@1.0.1\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
-     </Reference>
-     <Reference Include="Sirenix.Utilities.Editor">
-     <HintPath>E:\unity-AAMT\Assets\AAMT\Plugins\Sirenix\Assemblies\Sirenix.Utilities.Editor.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\PackageCache\com.unity.testtools.codecoverage@1.0.1\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Plastic.Newtonsoft.Json">
-     <HintPath>E:\unity-AAMT\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Analytics.StandardEvents">
-     <HintPath>E:\unity-AAMT\Library\PackageCache\com.unity.analytics@3.6.12\AnalyticsStandardEvents\Unity.Analytics.StandardEvents.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\PackageCache\com.unity.analytics@3.6.12\AnalyticsStandardEvents\Unity.Analytics.StandardEvents.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Analytics.Editor">
-     <HintPath>E:\unity-AAMT\Library\PackageCache\com.unity.analytics@3.6.12\Unity.Analytics.Editor.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\PackageCache\com.unity.analytics@3.6.12\Unity.Analytics.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Plastic.Antlr3.Runtime">
-     <HintPath>E:\unity-AAMT\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.YamlDotNet">
-     <HintPath>E:\unity-AAMT\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
-     </Reference>
-     <Reference Include="Sirenix.OdinInspector.Editor">
-     <HintPath>E:\unity-AAMT\Assets\AAMT\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Editor.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
      </Reference>
      <Reference Include="unityplastic">
-     <HintPath>E:\unity-AAMT\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Analytics.Tracker">
-     <HintPath>E:\unity-AAMT\Library\PackageCache\com.unity.analytics@3.6.12\Unity.Analytics.Tracker.dll</HintPath>
-     </Reference>
-     <Reference Include="Sirenix.Utilities">
-     <HintPath>E:\unity-AAMT\Assets\AAMT\Plugins\Sirenix\Assemblies\Sirenix.Utilities.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\PackageCache\com.unity.analytics@3.6.12\Unity.Analytics.Tracker.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-     <HintPath>E:\unity-AAMT\Library\PackageCache\com.unity.visualscripting@1.7.6\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\PackageCache\com.unity.visualscripting@1.7.6\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+     </Reference>
+     <Reference Include="Sirenix.OdinInspector.Attributes">
+     <HintPath>E:\AAMT-Sample\Packages\com.jimhy.aamt\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Attributes.dll</HintPath>
+     </Reference>
+     <Reference Include="Sirenix.Serialization.Config">
+     <HintPath>E:\AAMT-Sample\Packages\com.jimhy.aamt\Plugins\Sirenix\Assemblies\Sirenix.Serialization.Config.dll</HintPath>
+     </Reference>
+     <Reference Include="Sirenix.Utilities.Editor">
+     <HintPath>E:\AAMT-Sample\Packages\com.jimhy.aamt\Plugins\Sirenix\Assemblies\Sirenix.Utilities.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Sirenix.OdinInspector.Editor">
+     <HintPath>E:\AAMT-Sample\Packages\com.jimhy.aamt\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Sirenix.Utilities">
+     <HintPath>E:\AAMT-Sample\Packages\com.jimhy.aamt\Plugins\Sirenix\Assemblies\Sirenix.Utilities.dll</HintPath>
      </Reference>
      <Reference Include="Sirenix.Serialization">
-     <HintPath>E:\unity-AAMT\Assets\AAMT\Plugins\Sirenix\Assemblies\Sirenix.Serialization.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Packages\com.jimhy.aamt\Plugins\Sirenix\Assemblies\Sirenix.Serialization.dll</HintPath>
      </Reference>
      <Reference Include="nunit.framework">
-     <HintPath>E:\unity-AAMT\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Android.Types">
      <HintPath>D:\Program Files\Unity 2021.3.1f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Types.dll</HintPath>
@@ -982,16 +994,16 @@
      <HintPath>D:\Program Files\Unity 2021.3.1f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\netstandard.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.UI">
-     <HintPath>E:\unity-AAMT\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.UI">
-     <HintPath>E:\unity-AAMT\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.TestRunner">
-     <HintPath>E:\unity-AAMT\Library\ScriptAssemblies\UnityEngine.TestRunner.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\ScriptAssemblies\UnityEngine.TestRunner.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.TestRunner">
-     <HintPath>E:\unity-AAMT\Library\ScriptAssemblies\UnityEditor.TestRunner.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\ScriptAssemblies\UnityEditor.TestRunner.dll</HintPath>
      </Reference>
   </ItemGroup>
   <ItemGroup>

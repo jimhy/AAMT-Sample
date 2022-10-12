@@ -12,7 +12,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{71973d31-1b6c-9e04-a6c3-09910861cf36}</ProjectGuid>
+    <ProjectGuid>{622c9ac5-b1fa-57e4-18e5-e7b156be6886}</ProjectGuid>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -41,24 +41,17 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\AAMT\Plugins\Sirenix\Demos\Editor Windows\Scripts\Editor\OdinMenuStyleExample.cs" />
-     <Compile Include="Assets\AAMT\Plugins\Sirenix\Demos\Editor Windows\Scripts\Editor\OdinMenuEditorWindowExample.cs" />
-     <Compile Include="Assets\AAMT\Editor\Sprites\EditorCommon.cs" />
-     <Compile Include="Assets\AAMT\Editor\Sprites\Windows\SettingManagerWindow.cs" />
-     <Compile Include="Assets\AAMT\Editor\Sprites\RemoveMissingScripts.cs" />
-     <Compile Include="Assets\AAMT\Editor\Sprites\Windows\AssetBundleSettingWindow.cs" />
-     <Compile Include="Assets\AAMT\Plugins\Sirenix\Demos\Editor Windows\Scripts\Editor\SomeData.cs" />
-     <Compile Include="Assets\AAMT\Editor\Sprites\OnPreprocessHandler.cs" />
-     <Compile Include="Assets\AAMT\Editor\Sprites\Windows\AamtMainWindos.cs" />
-     <Compile Include="Assets\AAMT\Editor\Sprites\AutoSetAssetsBundelName.cs" />
-     <Compile Include="Assets\AAMT\Editor\Sprites\WindowDefine.cs" />
-     <Compile Include="Assets\AAMT\Plugins\Sirenix\Demos\Editor Windows\Scripts\Editor\OverrideGetTargetsExampleWindow.cs" />
-     <Compile Include="Assets\AAMT\Plugins\Sirenix\Demos\Editor Windows\Scripts\Editor\SomeTextureToolWindow.cs" />
-     <Compile Include="Assets\AAMT\Editor\Sprites\AssetsBundleBuilder.cs" />
-     <Compile Include="Assets\AAMT\Plugins\Sirenix\Demos\Editor Windows\Scripts\Editor\BasicOdinEditorExampleWindow.cs" />
-     <Compile Include="Assets\AAMT\Editor\Sprites\AssetBundleSetting.cs" />
-     <Compile Include="Assets\AAMT\Plugins\Sirenix\Demos\Editor Windows\Scripts\Editor\QuicklyInspectObjects.cs" />
-     <Compile Include="Assets\AAMT\Editor\Sprites\AssetBundlePackageData.cs" />
+     <Compile Include="Assets\AAMT\Editor\EditorCommon.cs" />
+     <Compile Include="Assets\AAMT\Editor\Windows\SettingManagerWindow.cs" />
+     <Compile Include="Assets\AAMT\Editor\AssetBundlePackageData.cs" />
+     <Compile Include="Assets\AAMT\Editor\RemoveMissingScripts.cs" />
+     <Compile Include="Assets\AAMT\Editor\Windows\AssetBundleSettingWindow.cs" />
+     <Compile Include="Assets\AAMT\Editor\OnPreprocessHandler.cs" />
+     <Compile Include="Assets\AAMT\Editor\Windows\AamtMainWindos.cs" />
+     <Compile Include="Assets\AAMT\Editor\AutoSetAssetsBundelName.cs" />
+     <Compile Include="Assets\AAMT\Editor\WindowDefine.cs" />
+     <Compile Include="Assets\AAMT\Editor\AssetsBundleBuilder.cs" />
+     <Compile Include="Assets\AAMT\Editor\AssetBundleSetting.cs" />
      <Reference Include="UnityEngine">
      <HintPath>D:\Program Files\Unity 2021.3.1f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
      </Reference>
@@ -315,58 +308,58 @@
      <HintPath>D:\Program Files\Unity 2021.3.1f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
      </Reference>
      <Reference Include="Sirenix.OdinInspector.Attributes">
-     <HintPath>E:\unity-AAMT\Assets\AAMT\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Attributes.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Assets\AAMT\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Attributes.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.IonicZip">
-     <HintPath>E:\unity-AAMT\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
      </Reference>
      <Reference Include="log4netPlastic">
-     <HintPath>E:\unity-AAMT\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
      </Reference>
      <Reference Include="Sirenix.Serialization.Config">
-     <HintPath>E:\unity-AAMT\Assets\AAMT\Plugins\Sirenix\Assemblies\Sirenix.Serialization.Config.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Assets\AAMT\Plugins\Sirenix\Assemblies\Sirenix.Serialization.Config.dll</HintPath>
      </Reference>
      <Reference Include="ReportGeneratorMerged">
-     <HintPath>E:\unity-AAMT\Library\PackageCache\com.unity.testtools.codecoverage@1.0.1\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\PackageCache\com.unity.testtools.codecoverage@1.0.1\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
      </Reference>
      <Reference Include="Sirenix.Utilities.Editor">
-     <HintPath>E:\unity-AAMT\Assets\AAMT\Plugins\Sirenix\Assemblies\Sirenix.Utilities.Editor.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Assets\AAMT\Plugins\Sirenix\Assemblies\Sirenix.Utilities.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Plastic.Newtonsoft.Json">
-     <HintPath>E:\unity-AAMT\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Analytics.StandardEvents">
-     <HintPath>E:\unity-AAMT\Library\PackageCache\com.unity.analytics@3.6.12\AnalyticsStandardEvents\Unity.Analytics.StandardEvents.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\PackageCache\com.unity.analytics@3.6.12\AnalyticsStandardEvents\Unity.Analytics.StandardEvents.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Analytics.Editor">
-     <HintPath>E:\unity-AAMT\Library\PackageCache\com.unity.analytics@3.6.12\Unity.Analytics.Editor.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\PackageCache\com.unity.analytics@3.6.12\Unity.Analytics.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Plastic.Antlr3.Runtime">
-     <HintPath>E:\unity-AAMT\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.YamlDotNet">
-     <HintPath>E:\unity-AAMT\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
      </Reference>
      <Reference Include="Sirenix.OdinInspector.Editor">
-     <HintPath>E:\unity-AAMT\Assets\AAMT\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Editor.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Assets\AAMT\Plugins\Sirenix\Assemblies\Sirenix.OdinInspector.Editor.dll</HintPath>
      </Reference>
      <Reference Include="unityplastic">
-     <HintPath>E:\unity-AAMT\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Analytics.Tracker">
-     <HintPath>E:\unity-AAMT\Library\PackageCache\com.unity.analytics@3.6.12\Unity.Analytics.Tracker.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\PackageCache\com.unity.analytics@3.6.12\Unity.Analytics.Tracker.dll</HintPath>
      </Reference>
      <Reference Include="Sirenix.Utilities">
-     <HintPath>E:\unity-AAMT\Assets\AAMT\Plugins\Sirenix\Assemblies\Sirenix.Utilities.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Assets\AAMT\Plugins\Sirenix\Assemblies\Sirenix.Utilities.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-     <HintPath>E:\unity-AAMT\Library\PackageCache\com.unity.visualscripting@1.7.6\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\PackageCache\com.unity.visualscripting@1.7.6\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="Sirenix.Serialization">
-     <HintPath>E:\unity-AAMT\Assets\AAMT\Plugins\Sirenix\Assemblies\Sirenix.Serialization.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Assets\AAMT\Plugins\Sirenix\Assemblies\Sirenix.Serialization.dll</HintPath>
      </Reference>
      <Reference Include="nunit.framework">
-     <HintPath>E:\unity-AAMT\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Android.Types">
      <HintPath>D:\Program Files\Unity 2021.3.1f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Types.dll</HintPath>
@@ -975,158 +968,150 @@
      <HintPath>D:\Program Files\Unity 2021.3.1f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\netstandard.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.TestRunner">
-     <HintPath>E:\unity-AAMT\Library\ScriptAssemblies\UnityEngine.TestRunner.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\ScriptAssemblies\UnityEngine.TestRunner.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.TestRunner">
-     <HintPath>E:\unity-AAMT\Library\ScriptAssemblies\UnityEditor.TestRunner.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\ScriptAssemblies\UnityEditor.TestRunner.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Flow.Editor">
-     <HintPath>E:\unity-AAMT\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Purchasing.Common">
-     <HintPath>E:\unity-AAMT\Library\ScriptAssemblies\Purchasing.Common.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\ScriptAssemblies\Purchasing.Common.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VSCode.Editor">
-     <HintPath>E:\unity-AAMT\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.Tilemap.Editor">
-     <HintPath>E:\unity-AAMT\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.Purchasing">
-     <HintPath>E:\unity-AAMT\Library\ScriptAssemblies\UnityEngine.Purchasing.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\ScriptAssemblies\UnityEngine.Purchasing.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TextMeshPro.Editor">
-     <HintPath>E:\unity-AAMT\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualStudio.Editor">
-     <HintPath>E:\unity-AAMT\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
-     <HintPath>E:\unity-AAMT\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
-     <HintPath>E:\unity-AAMT\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Timeline">
-     <HintPath>E:\unity-AAMT\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TextMeshPro">
-     <HintPath>E:\unity-AAMT\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.Purchasing.SecurityStub">
-     <HintPath>E:\unity-AAMT\Library\ScriptAssemblies\UnityEngine.Purchasing.SecurityStub.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\ScriptAssemblies\UnityEngine.Purchasing.SecurityStub.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.State.Editor">
-     <HintPath>E:\unity-AAMT\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Core.Editor">
-     <HintPath>E:\unity-AAMT\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.Advertisements">
-     <HintPath>E:\unity-AAMT\Library\ScriptAssemblies\UnityEngine.Advertisements.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\ScriptAssemblies\UnityEngine.Advertisements.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
-     <HintPath>E:\unity-AAMT\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.Sprite.Editor">
-     <HintPath>E:\unity-AAMT\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
-     <HintPath>E:\unity-AAMT\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Flow">
-     <HintPath>E:\unity-AAMT\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.UI">
-     <HintPath>E:\unity-AAMT\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
      </Reference>
      <Reference Include="Unity.PlasticSCM.Editor">
-     <HintPath>E:\unity-AAMT\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Rider.Editor">
-     <HintPath>E:\unity-AAMT\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Analytics">
-     <HintPath>E:\unity-AAMT\Library\ScriptAssemblies\Analytics.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\ScriptAssemblies\Analytics.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.SpatialTracking">
-     <HintPath>E:\unity-AAMT\Library\ScriptAssemblies\UnityEngine.SpatialTracking.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\ScriptAssemblies\UnityEngine.SpatialTracking.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.UI">
-     <HintPath>E:\unity-AAMT\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Analytics.DataPrivacy">
-     <HintPath>E:\unity-AAMT\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Core">
-     <HintPath>E:\unity-AAMT\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
      </Reference>
      <Reference Include="Unity.EditorCoroutines.Editor">
-     <HintPath>E:\unity-AAMT\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.Purchasing.SecurityCore">
-     <HintPath>E:\unity-AAMT\Library\ScriptAssemblies\UnityEngine.Purchasing.SecurityCore.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\ScriptAssemblies\UnityEngine.Purchasing.SecurityCore.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.Purchasing.Codeless">
-     <HintPath>E:\unity-AAMT\Library\ScriptAssemblies\UnityEngine.Purchasing.Codeless.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\ScriptAssemblies\UnityEngine.Purchasing.Codeless.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.XR.LegacyInputHelpers">
-     <HintPath>E:\unity-AAMT\Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Shared.Editor">
-     <HintPath>E:\unity-AAMT\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Timeline.Editor">
-     <HintPath>E:\unity-AAMT\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.Purchasing.Stores">
-     <HintPath>E:\unity-AAMT\Library\ScriptAssemblies\UnityEngine.Purchasing.Stores.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\ScriptAssemblies\UnityEngine.Purchasing.Stores.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.XR.LegacyInputHelpers">
-     <HintPath>E:\unity-AAMT\Library\ScriptAssemblies\UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\ScriptAssemblies\UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.Monetization">
-     <HintPath>E:\unity-AAMT\Library\ScriptAssemblies\UnityEngine.Monetization.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\ScriptAssemblies\UnityEngine.Monetization.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.Purchasing">
-     <HintPath>E:\unity-AAMT\Library\ScriptAssemblies\UnityEditor.Purchasing.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\ScriptAssemblies\UnityEditor.Purchasing.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.SpatialTracking">
-     <HintPath>E:\unity-AAMT\Library\ScriptAssemblies\UnityEditor.SpatialTracking.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\ScriptAssemblies\UnityEditor.SpatialTracking.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TestTools.CodeCoverage.Editor">
-     <HintPath>E:\unity-AAMT\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.Advertisements.Editor">
-     <HintPath>E:\unity-AAMT\Library\ScriptAssemblies\UnityEngine.Advertisements.Editor.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\ScriptAssemblies\UnityEngine.Advertisements.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.State">
-     <HintPath>E:\unity-AAMT\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
+     <HintPath>E:\AAMT-Sample\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
      </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{86e1c57c-4dc4-b75d-ac16-e9bd7bee19c1}</Project>
-      <Name>Assembly-CSharp-firstpass</Name>
-    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{ac54ac97-fb53-4751-b0e7-9e1a17b9e7b9}</Project>
+      <Project>{290c1c51-8933-ec4c-eb8d-6a643fcd1d61}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
-    <ProjectReference Include="Assembly-CSharp-Editor-firstpass.csproj">
-      <Project>{e19adee2-8850-428a-cbd9-6ec295eb99bb}</Project>
-      <Name>Assembly-CSharp-Editor-firstpass</Name>
-    </ProjectReference>
     <ProjectReference Include="Sirenix.OdinInspector.CompatibilityLayer.csproj">
-      <Project>{7c637f88-2871-0487-2898-3ab8bd9362f9}</Project>
+      <Project>{af57a044-9183-45af-eb68-ac1ca55d0469}</Project>
       <Name>Sirenix.OdinInspector.CompatibilityLayer</Name>
     </ProjectReference>
     <ProjectReference Include="Sirenix.OdinInspector.CompatibilityLayer.Editor.csproj">
-      <Project>{8e7c89cf-f737-65b5-324f-5d6393011c17}</Project>
+      <Project>{efc4b178-c8fb-c989-3a47-4bc08009f09a}</Project>
       <Name>Sirenix.OdinInspector.CompatibilityLayer.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Sirenix.OdinValidator.csproj">
-      <Project>{d042d3dd-995c-bf89-b586-e23daef87890}</Project>
+      <Project>{abaa2410-9264-3f57-5ffa-4eb5c367fc51}</Project>
       <Name>Sirenix.OdinValidator</Name>
     </ProjectReference>
   </ItemGroup>
