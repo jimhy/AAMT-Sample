@@ -13,15 +13,10 @@ public class LoadAssetsInEditor : MonoBehaviour
 
     void Start()
     {
-        //====================================
-        // 前期工作:重要!重要!重要!
-        // 1.点击Assets/AAMT/Data/Setting/SettingManager文件
-        // 2.拖动Assets/AAMT/Data/Setting/Setting/editor文件拖到右边的Asset Setting框内
-        //====================================
         prefabBundlePathList = new[]
         {
-            "Res/Prefabs/Capsule.prefab", //注意:这里需要Assets目录下的全路径，包含扩展名
-            "Res/Prefabs/Sphere.prefab"
+            "Sample/Res/Prefabs/Capsule.prefab", //注意:这里需要Assets目录下的全路径，包含扩展名
+            "Sample/Res/Prefabs/Sphere.prefab"
         };
         _gameObjects = new List<GameObject>();
         if (LoadButton != null) LoadButton.onClick.AddListener(onLoad);

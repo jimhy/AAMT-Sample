@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using AAMT;
 using UnityEngine;
 using UnityEngine.UI;
@@ -15,14 +13,14 @@ public class LoadPrefab : MonoBehaviour
     {
         //====================================
         // 前期工作:重要!重要!重要!
-        // 1.点击Assets/AAMT/Data/Setting/SettingManager文件
-        // 2.拖动Assets/AAMT/Data/Setting/Setting/win文件拖到右边的Asset Setting框内
-        // 3.点击工具栏按钮AAMT/Build Asset Bundles按钮，等bundle打包完成即可运行
+        // 1.点击Editor工具栏AAMT->MainWindow面板->运行按钮
+        // 2.当前平台类型选择为windows
+        // 3.运行游戏即可加载streamingAssets路径的bundle文件
         //====================================
         prefabBundlePathList = new[]
         {
-            "AAMT/Sample/Res/Prefabs/Capsule.prefab", //注意:这里需要Assets目录下的全路径，包含扩展名
-            "AAMT/Sample/Res/Prefabs/Sphere.prefab"
+            "Sample/Res/Prefabs/Capsule.prefab", //注意:这里需要Assets目录下的全路径，包含扩展名
+            "Sample/Res/Prefabs/Sphere.prefab"
         };
         if (LoadButton != null) LoadButton.onClick.AddListener(onLoad);
         if (ReleaseButton != null) ReleaseButton.onClick.AddListener(onRelease);

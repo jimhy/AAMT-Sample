@@ -1,9 +1,5 @@
-using System.Collections.Generic;
-using System.Threading;
-using System.Threading.Tasks;
 using AAMT;
 using UnityEngine;
-using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 namespace GameLogic
@@ -104,7 +100,7 @@ namespace GameLogic
 
         private void OnRelease()
         {
-            var paths = new string[] {"AAMT/Sample/res/Test/P3/P3.prefab", "AAMT/Sample/res/Test/P1/P1.prefab"};
+            var paths = new string[] {"Sample/res/Test/P3/P3.prefab", "Sample/res/Test/P1/P1.prefab"};
             if (index >= paths.Length) return;
             var path = paths[0];
             AAMTManager.Release(path);
@@ -148,14 +144,14 @@ namespace GameLogic
             // {
             //     image.sprite = sp;
             // });
-            uiPath = "AAMT/Sample/res/Test/P1/P1.prefab";
+            uiPath = "Sample/Res/Test/P1/P1.prefab";
             AAMTManager.GetAssetsAsync<GameObject>(uiPath, obj =>
             {
                 var go = Instantiate(obj, Vector3.zero, Quaternion.identity, uiRoot);
                 go.SetActive(true);
                 go.transform.localPosition = Vector3.zero;
             });
-            uiPath = "AAMT/Sample/res/Test/P3/P3.prefab";
+            uiPath = "Sample/res/Test/P3/P3.prefab";
             AAMTManager.GetAssetsAsync<GameObject>(uiPath, obj =>
             {
                 var p3 = Instantiate(obj, Vector3.zero, Quaternion.identity, uiRoot);
@@ -177,8 +173,8 @@ namespace GameLogic
 
         private Vector3 RandomPosition()
         {
-            var x = UnityEngine.Random.Range(-25f, 25f);
-            var z = UnityEngine.Random.Range(-25f, 25f);
+            var x = Random.Range(-25f, 25f);
+            var z = Random.Range(-25f, 25f);
             return new Vector3(x, 0, z);
         }
 
