@@ -1,27 +1,27 @@
-using System.Collections;
-using System.Collections.Generic;
 using AAMT;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class LoaderScene : MonoBehaviour
+namespace Sample
 {
-    public Button loaderButton;
-
-    void Start()
+    public class LoaderScene : MonoBehaviour
     {
-        loaderButton.onClick.AddListener(onLoadScene);
-    }
+        public Button loaderButton;
 
-    private void onLoadScene()
-    {
-        var path = "scenes/SampleScene.unity";
-        AAMTManager.LoadScene(path, () => { Debug.Log("Load Scene Complete!!"); });
-    }
+        void Start()
+        {
+            loaderButton.onClick.AddListener(onLoadScene);
+        }
 
-    // Update is called once per frame
-    void Update()
-    {
+        private void onLoadScene()
+        {
+            var path = "scenes/SampleScene.unity";
+            AAMTManager.LoadScene(path, () => { Debug.Log("Load Scene Complete!!"); });
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+        }
     }
 }

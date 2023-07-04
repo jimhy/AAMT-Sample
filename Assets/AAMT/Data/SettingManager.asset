@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5adae14af0d47b0826c75e0d38d10cc, type: 3}
   m_Name: SettingManager
   m_EditorClassIdentifier: 
-  windowsAssetSetting: {fileID: 0}
-  androidAssetSetting: {fileID: 0}
+  windowsAssetSetting: {fileID: 11400000, guid: fe00e01098b2491408118dc23a2b4084, type: 2}
+  androidAssetSetting: {fileID: 11400000, guid: feee12aa1843da843b66e7bafb06c7e0, type: 2}
   iosAssetSetting: {fileID: 0}
-  buildTarget: 0
+  buildTarget: 1
