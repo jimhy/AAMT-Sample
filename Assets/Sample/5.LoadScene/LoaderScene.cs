@@ -15,7 +15,7 @@ namespace Sample
 
         private void onLoadScene()
         {
-            var path = "scenes/SampleScene.unity";
+            var path = "Sample/Res/Scenes/TestScene1.unity";
             AAMTManager.LoadScene(path, () => { Debug.Log("Load Scene Complete!!"); });
         }
 

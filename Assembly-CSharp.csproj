@@ -41,15 +41,16 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Sample\LoaderScene.cs" />
+     <Compile Include="Assets\Sample\3.MoveAssetsToPersistentDataPath\MoveAssetsToPersistentDataPath.cs" />
+     <Compile Include="Assets\Sample\5.LoadScene\LoaderScene.cs" />
      <Compile Include="Assets\Sample\Main.cs" />
      <Compile Include="Assets\Sample\2.LoadPrefab\LoadPrefab.cs" />
      <Compile Include="Assets\Sample\DrawFps.cs" />
      <Compile Include="Assets\Sample\4.LoadAssetsFromRemote\LoadAssetsFromRemote.cs" />
      <Compile Include="Assets\Sample\1.LoadAssetsInEditor\LoadAssetsInEditor.cs" />
-     <Compile Include="Assets\Sample\3.MoveAssetsToPersistentDataPath\MoveAssetsToPersistentDataPath.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\streamingassets\windows" />
+     <Folder Include="Assets\Sample\Res\Scenes" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <Folder Include="Assets\Sample\Res\Prefabs" />
@@ -108,6 +109,7 @@
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
      <Folder Include="Assets\Sample\Res\Effect\Effect1\Effect2" />
      <Folder Include="Assets\AAMT\Data\Platforms" />
+     <Folder Include="Assets\Sample\5.LoadScene" />
      <Folder Include="Assets\streamingassets\windows\sample\res" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
      <Folder Include="Assets\Sample" />
@@ -369,12 +371,6 @@
      <Reference Include="UnityEditor.UnityConnectModule">
      <HintPath>D:\Program Files\Unity Hub\Editor\2021.3.21f1c1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
      </Reference>
-     <Reference Include="ReportGeneratorMerged">
-     <HintPath>D:\workspace\AAMT-Sample\Library\PackageCache\com.unity.testtools.codecoverage@1.2.2\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
-     </Reference>
-     <Reference Include="Newtonsoft.Json">
-     <HintPath>D:\workspace\AAMT-Sample\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.Analytics.StandardEvents">
      <HintPath>D:\workspace\AAMT-Sample\Library\PackageCache\com.unity.analytics@3.6.12\AnalyticsStandardEvents\Unity.Analytics.StandardEvents.dll</HintPath>
      </Reference>
@@ -386,6 +382,12 @@
      </Reference>
      <Reference Include="Unity.Analytics.Tracker">
      <HintPath>D:\workspace\AAMT-Sample\Library\PackageCache\com.unity.analytics@3.6.12\Unity.Analytics.Tracker.dll</HintPath>
+     </Reference>
+     <Reference Include="ReportGeneratorMerged">
+     <HintPath>D:\workspace\AAMT-Sample\Library\PackageCache\com.unity.testtools.codecoverage@1.2.2\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
+     </Reference>
+     <Reference Include="Newtonsoft.Json">
+     <HintPath>D:\workspace\AAMT-Sample\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Android.Types">
      <HintPath>D:\Program Files\Unity Hub\Editor\2021.3.21f1c1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Types.dll</HintPath>
@@ -759,11 +761,17 @@
      <Reference Include="System.Xml.Serialization">
      <HintPath>D:\Program Files\Unity Hub\Editor\2021.3.21f1c1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.VisualScripting.Flow.Editor">
+     <HintPath>D:\workspace\AAMT-Sample\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
+     </Reference>
      <Reference Include="Purchasing.Common">
      <HintPath>D:\workspace\AAMT-Sample\Library\ScriptAssemblies\Purchasing.Common.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VSCode.Editor">
      <HintPath>D:\workspace\AAMT-Sample\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.2D.Tilemap.Editor">
+     <HintPath>D:\workspace\AAMT-Sample\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.Purchasing">
      <HintPath>D:\workspace\AAMT-Sample\Library\ScriptAssemblies\UnityEngine.Purchasing.dll</HintPath>
@@ -774,23 +782,50 @@
      <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
      <HintPath>D:\workspace\AAMT-Sample\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.VisualStudio.Editor">
+     <HintPath>D:\workspace\AAMT-Sample\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
      <HintPath>D:\workspace\AAMT-Sample\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.VisualScripting.State.Editor">
-     <HintPath>D:\workspace\AAMT-Sample\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
+     <Reference Include="Unity.Timeline">
+     <HintPath>D:\workspace\AAMT-Sample\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VisualScripting.Core.Editor">
+     <HintPath>D:\workspace\AAMT-Sample\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.TextMeshPro">
+     <HintPath>D:\workspace\AAMT-Sample\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.Purchasing.SecurityStub">
      <HintPath>D:\workspace\AAMT-Sample\Library\ScriptAssemblies\UnityEngine.Purchasing.SecurityStub.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.VisualScripting.State.Editor">
+     <HintPath>D:\workspace\AAMT-Sample\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
      <HintPath>D:\workspace\AAMT-Sample\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Services.Analytics">
+     <HintPath>D:\workspace\AAMT-Sample\Library\ScriptAssemblies\Unity.Services.Analytics.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.2D.Sprite.Editor">
+     <HintPath>D:\workspace\AAMT-Sample\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Services.Analytics.Editor">
+     <HintPath>D:\workspace\AAMT-Sample\Library\ScriptAssemblies\Unity.Services.Analytics.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
      <HintPath>D:\workspace\AAMT-Sample\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.VisualScripting.Flow">
+     <HintPath>D:\workspace\AAMT-Sample\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
+     </Reference>
      <Reference Include="UnityEditor.UI">
      <HintPath>D:\workspace\AAMT-Sample\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.PlasticSCM.Editor">
+     <HintPath>D:\workspace\AAMT-Sample\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Rider.Editor">
      <HintPath>D:\workspace\AAMT-Sample\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
@@ -804,59 +839,26 @@
      <Reference Include="UnityEngine.SpatialTracking">
      <HintPath>D:\workspace\AAMT-Sample\Library\ScriptAssemblies\UnityEngine.SpatialTracking.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.VisualScripting.Core">
+     <HintPath>D:\workspace\AAMT-Sample\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.EditorCoroutines.Editor">
      <HintPath>D:\workspace\AAMT-Sample\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.Analytics.DataPrivacy">
-     <HintPath>D:\workspace\AAMT-Sample\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.Purchasing.Codeless">
-     <HintPath>D:\workspace\AAMT-Sample\Library\ScriptAssemblies\UnityEngine.Purchasing.Codeless.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.VisualScripting.Flow.Editor">
-     <HintPath>D:\workspace\AAMT-Sample\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.2D.Tilemap.Editor">
-     <HintPath>D:\workspace\AAMT-Sample\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.VisualStudio.Editor">
-     <HintPath>D:\workspace\AAMT-Sample\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.Services.Analytics.Editor">
-     <HintPath>D:\workspace\AAMT-Sample\Library\ScriptAssemblies\Unity.Services.Analytics.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.Timeline">
-     <HintPath>D:\workspace\AAMT-Sample\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.VisualScripting.Core.Editor">
-     <HintPath>D:\workspace\AAMT-Sample\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.TextMeshPro">
-     <HintPath>D:\workspace\AAMT-Sample\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.Services.Analytics">
-     <HintPath>D:\workspace\AAMT-Sample\Library\ScriptAssemblies\Unity.Services.Analytics.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.2D.Sprite.Editor">
-     <HintPath>D:\workspace\AAMT-Sample\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.VisualScripting.Flow">
-     <HintPath>D:\workspace\AAMT-Sample\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.PlasticSCM.Editor">
-     <HintPath>D:\workspace\AAMT-Sample\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Services.Core">
      <HintPath>D:\workspace\AAMT-Sample\Library\ScriptAssemblies\Unity.Services.Core.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.VisualScripting.Core">
-     <HintPath>D:\workspace\AAMT-Sample\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
+     <Reference Include="Unity.Analytics.DataPrivacy">
+     <HintPath>D:\workspace\AAMT-Sample\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Services.Core.Analytics">
      <HintPath>D:\workspace\AAMT-Sample\Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.Purchasing.SecurityCore">
      <HintPath>D:\workspace\AAMT-Sample\Library\ScriptAssemblies\UnityEngine.Purchasing.SecurityCore.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.Purchasing.Codeless">
+     <HintPath>D:\workspace\AAMT-Sample\Library\ScriptAssemblies\UnityEngine.Purchasing.Codeless.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.XR.LegacyInputHelpers">
      <HintPath>D:\workspace\AAMT-Sample\Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
